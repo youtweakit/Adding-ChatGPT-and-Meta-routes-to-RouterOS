@@ -1,36 +1,103 @@
-# Usefull routes adding to RouterOS. Change gateway to yours
-:global targetSubnets {
-    # Microsoft Azure
-    "4.150.0.0/15"; "4.152.0.0/14"; "4.156.0.0/14"; "4.180.0.0/14"; "4.208.0.0/12";
-    "13.64.0.0/11"; "13.96.0.0/13"; "13.104.0.0/14"; "20.0.0.0/8"; "23.96.0.0/13";
-    "40.64.0.0/10"; "40.128.0.0/12"; "51.12.0.0/15"; "51.120.0.0/14"; "51.140.0.0/14";
-    "52.96.0.0/12"; "52.112.0.0/14"; "52.125.0.0/16"; "52.136.0.0/13"; "52.160.0.0/11";
-    "52.224.0.0/11"; "65.52.0.0/14"; "104.40.0.0/13"; "104.208.0.0/12"; "131.253.0.0/16";
-    "137.116.0.0/15"; "138.91.0.0/16"; "168.61.0.0/16"; "172.168.0.0/15"; "172.170.0.0/16";
-    "172.171.0.0/16"; "193.149.0.0/16"; "207.46.0.0/16";
-
-    # YouTube (Google)
-    "142.250.0.0/16"; "172.217.0.0/16"; "216.58.0.0/16"; "34.0.0.0/8"; "35.0.0.0/8";
-    "74.125.0.0/16"; "173.194.0.0/16"; "108.177.0.0/16"; "172.253.0.0/16"; "208.117.224.0/20";
-
-    # Facebook/Instagram (Meta)
-    "31.13.0.0/16"; "157.240.0.0/16"; "129.134.0.0/16"; "185.60.216.0/22"; "45.64.40.0/22";
-    "66.220.144.0/20"; "69.171.224.0/19"; "102.132.0.0/14"; "147.75.0.0/16"; "179.60.192.0/20";
-
-    # TikTok
-    "13.107.0.0/16"; "52.114.0.0/16"; "104.119.0.0/16"; "150.242.0.0/16"; "203.205.0.0/16";
-    "223.119.0.0/16"; "2606:2800::/32"; "2620:1ec::/32";
-    
-    # ChatGPT
-    "104.16.0.0/12"; "141.193.0.0/16"; "146.148.0.0/16";
-    "172.217.0.0/16"; "185.199.0.0/16"; "199.36.158.0/23";
-    "34.120.0.0/16"; "35.186.0.0/16"; "52.152.0.0/13";
-    "13.107.246.0/24"; "40.97.0.0/16"; "52.253.0.0/16";
-    "151.101.0.0/16"; "162.125.0.0/16"; "185.94.188.0/23"
+:global routeTable {
+    { "subnet"="4.150.0.0/15"; "comment"="Microsoft Azure" };
+    { "subnet"="4.152.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="4.156.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="4.180.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="4.208.0.0/12"; "comment"="Microsoft Azure" };
+    { "subnet"="13.64.0.0/11"; "comment"="Microsoft Azure" };
+    { "subnet"="13.96.0.0/13"; "comment"="Microsoft Azure" };
+    { "subnet"="13.104.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="20.0.0.0/8"; "comment"="Microsoft Azure" };
+    { "subnet"="23.96.0.0/13"; "comment"="Microsoft Azure" };
+    { "subnet"="40.64.0.0/10"; "comment"="Microsoft Azure" };
+    { "subnet"="40.128.0.0/12"; "comment"="Microsoft Azure" };
+    { "subnet"="51.12.0.0/15"; "comment"="Microsoft Azure" };
+    { "subnet"="51.120.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="51.140.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="52.96.0.0/12"; "comment"="Microsoft Azure" };
+    { "subnet"="52.112.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="52.125.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="52.136.0.0/13"; "comment"="Microsoft Azure" };
+    { "subnet"="52.160.0.0/11"; "comment"="Microsoft Azure" };
+    { "subnet"="52.224.0.0/11"; "comment"="Microsoft Azure" };
+    { "subnet"="65.52.0.0/14"; "comment"="Microsoft Azure" };
+    { "subnet"="104.40.0.0/13"; "comment"="Microsoft Azure" };
+    { "subnet"="104.208.0.0/12"; "comment"="Microsoft Azure" };
+    { "subnet"="131.253.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="137.116.0.0/15"; "comment"="Microsoft Azure" };
+    { "subnet"="138.91.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="168.61.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="172.168.0.0/15"; "comment"="Microsoft Azure" };
+    { "subnet"="172.170.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="172.171.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="193.149.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="207.46.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="142.250.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="172.217.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="216.58.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="34.0.0.0/8"; "comment"="YouTube (Google)" };
+    { "subnet"="35.0.0.0/8"; "comment"="YouTube (Google)" };
+    { "subnet"="74.125.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="173.194.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="108.177.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="172.253.0.0/16"; "comment"="YouTube (Google)" };
+    { "subnet"="208.117.224.0/20"; "comment"="YouTube (Google)" };
+    { "subnet"="31.13.0.0/16"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="157.240.0.0/16"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="129.134.0.0/16"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="185.60.216.0/22"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="45.64.40.0/22"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="66.220.144.0/20"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="69.171.224.0/19"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="102.132.0.0/14"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="147.75.0.0/16"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="179.60.192.0/20"; "comment"="Facebook/Instagram (Meta)" };
+    { "subnet"="13.107.0.0/16"; "comment"="TikTok" };
+    { "subnet"="52.114.0.0/16"; "comment"="TikTok" };
+    { "subnet"="104.119.0.0/16"; "comment"="TikTok" };
+    { "subnet"="150.242.0.0/16"; "comment"="TikTok" };
+    { "subnet"="203.205.0.0/16"; "comment"="TikTok" };
+    { "subnet"="223.119.0.0/16"; "comment"="TikTok" };
+    { "subnet"="104.16.0.0/12"; "comment"="ChatGPT" };
+    { "subnet"="141.193.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="146.148.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="172.217.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="185.199.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="199.36.158.0/23"; "comment"="ChatGPT" };
+    { "subnet"="34.120.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="35.186.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="52.152.0.0/13"; "comment"="ChatGPT" };
+    { "subnet"="13.107.246.0/24"; "comment"="ChatGPT" };
+    { "subnet"="40.97.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="52.253.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="151.101.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="162.125.0.0/16"; "comment"="ChatGPT" };
+    { "subnet"="185.94.188.0/23"; "comment"="ChatGPT" };
+    { "subnet"="8.47.69.0/32"; "comment"="ChatGPT" };
+    { "subnet"="8.6.112.0/32"; "comment"="ChatGPT" };
+    { "subnet"="103.21.244.0/22"; "comment"="Cloudflare" };
+    { "subnet"="103.22.200.0/22"; "comment"="Cloudflare" };
+    { "subnet"="103.31.4.0/22"; "comment"="Cloudflare" };
+    { "subnet"="104.16.0.0/13"; "comment"="Cloudflare" };
+    { "subnet"="104.24.0.0/14"; "comment"="Cloudflare" };
+    { "subnet"="108.162.192.0/18"; "comment"="Cloudflare" };
+    { "subnet"="131.0.72.0/22"; "comment"="Cloudflare" };
+    { "subnet"="141.101.64.0/18"; "comment"="Cloudflare" };
+    { "subnet"="162.158.0.0/15"; "comment"="Cloudflare" };
+    { "subnet"="172.64.0.0/13"; "comment"="Cloudflare" };
+    { "subnet"="173.245.48.0/20"; "comment"="Cloudflare" };
+    { "subnet"="188.114.96.0/20"; "comment"="Cloudflare" };
+    { "subnet"="190.93.240.0/20"; "comment"="Cloudflare" };
+    { "subnet"="197.234.240.0/22"; "comment"="Cloudflare" };
+    { "subnet"="198.41.128.0/17"; "comment"="Cloudflare" };
 }
 
-:foreach subnet in=$targetSubnets do={
-    /ip route add dst-address=$subnet gateway=<YOUR_GATEWAY_HERE!!!>
+:foreach r in=$routeTable do={
+    :local subnet ($r->"subnet")
+    :local comment ($r->"comment")
+    :local existing [/ip route find where dst-address=$subnet]
+    :if ([:len $existing] > 0) do={ /ip route remove $existing }
+    /ip route add dst-address=$subnet gateway=<YOUR GATEWAY HERE!!!> comment=$comment
 }
 
-:log info "Routes added"
+:log info "Routes checked and added"
