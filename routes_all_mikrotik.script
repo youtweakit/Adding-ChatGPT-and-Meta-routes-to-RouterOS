@@ -91,6 +91,12 @@
     { "subnet"="197.234.240.0/22"; "comment"="Cloudflare" };
     { "subnet"="198.41.128.0/17"; "comment"="Cloudflare" };
     { "subnet"="142.251.1.97/32"; "comment"="GoogleTagManager.com" };
+    { "subnet"="31.13.82.0/23"; "comment"="WhatsApp" };
+    { "subnet"="31.13.89.0/24"; "comment"="WhatsApp" };
+    { "subnet"="157.240.0.0/16"; "comment"="WhatsApp" };
+    { "subnet"="173.252.64.0/18"; "comment"="WhatsApp" };
+    { "subnet"="185.60.216.0/22"; "comment"="WhatsApp" };
+    { "subnet"="69.63.176.0/20"; "comment"="WhatsApp" };
 }
 
 :foreach r in=$routeTable do={
