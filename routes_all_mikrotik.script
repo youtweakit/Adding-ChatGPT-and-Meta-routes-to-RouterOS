@@ -90,6 +90,7 @@
     { "subnet"="190.93.240.0/20"; "comment"="Cloudflare" };
     { "subnet"="197.234.240.0/22"; "comment"="Cloudflare" };
     { "subnet"="198.41.128.0/17"; "comment"="Cloudflare" };
+    { "subnet"="142.251.1.97/32"; "comment"="GoogleTagManager.com" };
 }
 
 :foreach r in=$routeTable do={
