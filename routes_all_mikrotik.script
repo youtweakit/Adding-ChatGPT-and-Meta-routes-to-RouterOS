@@ -9,7 +9,6 @@
     { "subnet"="13.104.0.0/14"; "comment"="Microsoft Azure" };
     { "subnet"="20.0.0.0/8"; "comment"="Microsoft Azure" };
     { "subnet"="23.96.0.0/13"; "comment"="Microsoft Azure" };
-    { "subnet"="34.0.0.0/10"; "comment"="Microsoft Azure" };
     { "subnet"="40.64.0.0/10"; "comment"="Microsoft Azure" };
     { "subnet"="40.128.0.0/12"; "comment"="Microsoft Azure" };
     { "subnet"="51.12.0.0/15"; "comment"="Microsoft Azure" };
@@ -22,7 +21,7 @@
     { "subnet"="52.160.0.0/11"; "comment"="Microsoft Azure" };
     { "subnet"="52.224.0.0/11"; "comment"="Microsoft Azure" };
     { "subnet"="65.52.0.0/14"; "comment"="Microsoft Azure" };
-    { "subnet"="62.89.0.0/16"; "comment"="Microsoft Azure" };
+    { "subnet"="62.89.0.0/16"; "comment"="YouTube (Google)" };
     { "subnet"="104.40.0.0/13"; "comment"="Microsoft Azure" };
     { "subnet"="104.208.0.0/12"; "comment"="Microsoft Azure" };
     { "subnet"="131.253.0.0/16"; "comment"="Microsoft Azure" };
