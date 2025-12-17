@@ -1,5 +1,5 @@
 :global routeTable {
-{ "subnet"="8.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="8.0.0.0/8"; "comment"="GOOGLE" };
 { "subnet"="13.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="17.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="18.0.0.0/8"; "comment"="Amazon AWS" };
