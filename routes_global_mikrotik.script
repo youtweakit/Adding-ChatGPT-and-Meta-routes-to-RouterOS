@@ -1,0 +1,133 @@
+:global routeTable {
+{ "subnet"="8.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="13.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="17.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="18.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="20.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="23.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="31.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="34.0.0.0/10"; "comment"="Amazon AWS" };
+{ "subnet"="35.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="37.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="40.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="43.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="45.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="47.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="50.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="51.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="52.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="54.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="62.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="64.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="66.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="69.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="70.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="72.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="74.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="81.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="82.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="84.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="87.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="89.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="91.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="95.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="96.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="99.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="103.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="104.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="107.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="108.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="121.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="123.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="129.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="130.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="131.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="136.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="141.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="142.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="146.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="147.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="149.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="151.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="152.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="157.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="162.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="169.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="173.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="174.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="176.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="179.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="184.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="185.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="188.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="190.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="193.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="195.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="197.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="198.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="199.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="203.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="204.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="205.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="207.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="208.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="209.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="212.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="213.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="216.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="172.64.0.0/16"; "comment"="Cloudflare" };
+{ "subnet"="172.65.0.0/16"; "comment"="Cloudflare" };
+{ "subnet"="172.66.0.0/16"; "comment"="Cloudflare" };
+{ "subnet"="172.67.0.0/16"; "comment"="Cloudflare" };
+{ "subnet"="172.110.32.0/21"; "comment"="Google" };
+{ "subnet"="172.217.0.0/16"; "comment"="Google" };
+{ "subnet"="172.253.0.0/16"; "comment"="Google" };
+{ "subnet"="192.35.50.0/24"; "comment"="Various" };
+{ "subnet"="192.158.28.0/22"; "comment"="Various" };
+{ "subnet"="192.173.64.0/18"; "comment"="Various" };
+{ "subnet"="192.178.0.0/15"; "comment"="Various" };
+{ "subnet"="192.188.168.0/21"; "comment"="Various" };
+{ "subnet"="192.200.224.0/19"; "comment"="Various" };
+{ "subnet"="192.243.248.0/22"; "comment"="Various" };
+{ "subnet"="3.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="23.20.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="34.240.0.0/15"; "comment"="Amazon AWS" };
+{ "subnet"="35.176.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="52.32.0.0/11"; "comment"="Amazon AWS" };
+{ "subnet"="52.64.0.0/11"; "comment"="Amazon AWS" };
+{ "subnet"="52.96.0.0/12"; "comment"="Amazon AWS" };
+{ "subnet"="52.112.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="54.64.0.0/12"; "comment"="Amazon AWS" };
+{ "subnet"="54.80.0.0/12"; "comment"="Amazon AWS" };
+{ "subnet"="54.144.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="54.160.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="54.176.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="54.208.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="54.224.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="54.240.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="107.20.0.0/16"; "comment"="Amazon AWS" };
+{ "subnet"="176.32.64.0/19"; "comment"="Amazon AWS" };
+{ "subnet"="205.251.192.0/19"; "comment"="Amazon AWS" };
+{ "subnet"="108.162.192.0/18"; "comment"="Cloudflare" };
+{ "subnet"="141.101.64.0/18"; "comment"="Cloudflare" };
+{ "subnet"="162.158.0.0/15"; "comment"="Cloudflare" };
+{ "subnet"="172.64.0.0/13"; "comment"="Cloudflare" };
+{ "subnet"="173.245.48.0/20"; "comment"="Cloudflare" };
+{ "subnet"="188.114.96.0/20"; "comment"="Cloudflare" };
+{ "subnet"="190.93.240.0/20"; "comment"="Cloudflare" };
+{ "subnet"="197.234.240.0/22"; "comment"="Cloudflare" };
+{ "subnet"="198.41.128.0/17"; "comment"="Cloudflare" };
+{ "subnet"="103.21.244.0/22"; "comment"="Cloudflare" };
+{ "subnet"="103.22.200.0/22"; "comment"="Cloudflare" };
+{ "subnet"="103.31.4.0/22"; "comment"="Cloudflare" };
+}
+
+:foreach r in=$routeTable do={
+    :local subnet ($r->"subnet")
+    :local comment ($r->"comment")
+    :local existing [/ip route find where dst-address=$subnet]
+    :if ([:len $existing] > 0) do={ /ip route remove $existing }
+    /ip route add dst-address=$subnet gateway=<YOUR GATEWAY HERE!!!> comment=$comment
+}
+
+:log info "Routes checked and added"
