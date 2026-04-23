@@ -17,6 +17,7 @@
 { "subnet"="51.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="52.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="54.0.0.0/8"; "comment"="Amazon AWS" };
+{ "subnet"="57.144.0.0/16"; "comment"="Insta Reels" };
 { "subnet"="62.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="64.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="66.0.0.0/8"; "comment"="Amazon AWS" };
