@@ -74,7 +74,6 @@
 { "subnet"="208.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="209.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="212.0.0.0/8"; "comment"="Amazon AWS" };
-{ "subnet"="213.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="216.0.0.0/8"; "comment"="Amazon AWS" };
 { "subnet"="172.64.0.0/16"; "comment"="Cloudflare" };
 { "subnet"="172.65.0.0/16"; "comment"="Cloudflare" };
