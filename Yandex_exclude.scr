@@ -16,12 +16,27 @@
     { "subnet"="213.180.192.0/19"; "comment"="Yandex subnets" };
 }
 
+:local gateway "192.168.1.1"
+:local tableName "main"
+
 :foreach r in=$routeTable do={
+
     :local subnet ($r->"subnet")
     :local comment ($r->"comment")
-    :local existing [/ip route find where dst-address=$subnet]
-    :if ([:len $existing] > 0) do={ /ip route remove $existing }
-    /ip route add dst-address=$subnet gateway=<YOUR GATEWAY HERE!!!> comment=$comment
+
+    :local existing [/ip/route/find where \
+        dst-address=$subnet and \
+        routing-table=$tableName]
+
+    :if ([:len $existing] > 0) do={
+        /ip/route/remove $existing
+    }
+
+    /ip/route/add \
+        dst-address=$subnet \
+        gateway=$gateway \
+        routing-table=$tableName \
+        comment=$comment
 }
 
-:log info "Routes checked and added"
+:log info "WL routes checked and added"
