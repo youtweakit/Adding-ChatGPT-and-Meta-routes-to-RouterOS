@@ -5,7 +5,7 @@
     { "subnet"="37.140.128.0/18"; "comment"="Yandex subnets" };
     { "subnet"="77.88.0.0/18"; "comment"="Yandex subnets" };
     { "subnet"="84.252.160.0/19"; "comment"="Yandex subnets" };
-    { "subnet"="87.250.224.0/19"; "comment"="Yandex subnets" };
+    { "subnet"="87.250.0.0/16"; "comment"="Yandex subnets" };
     { "subnet"="90.156.176.0/20"; "comment"="Yandex subnets" };
     { "subnet"="92.255.112.0/20"; "comment"="Yandex subnets" };
     { "subnet"="93.158.128.0/18"; "comment"="Yandex subnets" };
